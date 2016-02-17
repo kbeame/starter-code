@@ -10,7 +10,7 @@
             '?per_page=100' +
             '&sort=updated',
       type: 'GET',
-      headers: { 'Authorization': 'token ' + GITHUB_TOKEN }, //GITHUB_TOKEN?
+      headers: { 'Authorization': 'token ' + GITHUB_TOKEN },
       success: function(data, message, xhr) {
         repos.all = data;
       }
